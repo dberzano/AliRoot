@@ -164,7 +164,7 @@ int AliHLTGlobalAgent::CreateConfigurations(AliHLTConfigurationHandler* pHandler
   // assembly of the global ESD
 
   // define the inputs to the global ESD
-  TString esdInputs="TPC-globalmerger TPC-mcTrackMarker ITS-tracker TPC-HWCFDecoder TPC-ClusterTransformation GLOBAL-vertexer ITS-SPD-vertexer TPC-dEdx VZERO-RECO ITS-SAPtracker TRD-tracker";
+  TString esdInputs="TPC-globalmerger TPC-mcTrackMarker ITS-tracker TPC-HWCFDecoder TPC-ClusterTransformation GLOBAL-vertexer ITS-SPD-vertexer TPC-dEdx VZERO-RECO ITS-SAPtracker"; // TRD-tracker removed temporarily while it is still developed
 
   // check for the availibility
   pTokens=esdInputs.Tokenize(" ");
